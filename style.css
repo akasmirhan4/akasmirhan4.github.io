@@ -1,0 +1,226 @@
+
+@font-face {
+  font-family: GT Eesti Pro;
+  src: url(./fonts/GTEestiProDisplay-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: GT Eesti Pro;
+  src: url(./fonts/GTEestiProDisplay-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GT Eesti Pro;
+  src: url(./fonts/GTEestiProDisplay-Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: GT Eesti Pro;
+  src: url(./fonts/GTEestiProDisplay-Bold.ttf);
+  font-weight: 800;
+}
+
+/* End of Font Declaration */
+body{
+  font-family: GT EEsti Pro;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: #339fcd;
+}
+
+.navbar-brand{
+  font-weight: 200;
+}
+
+.my-profile, .my-projects, footer{
+    background: -webkit-linear-gradient(30deg, #339fcd 0%, #339fcd 60%, #3ea5ce 60%, #3ea5ce 100%);
+}
+
+.nav-item{
+  color: #0a3e5d !important;
+}
+
+.profile-pic{
+    height: 20vw;
+    min-height: 124px;
+}
+
+.logo img{
+  width: 64px;
+}
+
+.hello{
+  font-weight: 200;
+}
+
+.name{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav-item button{
+  color: #0a3e5d;
+}
+.nav-item button:hover{
+  color: #316d8f;
+}
+
+.nav-pills button{
+  border: #0a3e5d 1px solid !important;
+}
+
+.nav-pills button:hover{
+  background: #0a3e5d;
+  color: white;
+}
+
+/* Timeline */
+
+.my-timeline{
+  position: relative;
+  padding: 4em;
+}
+
+.title{
+  font-weight:600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0em 0 0.4em 0;
+}
+
+hr{
+  width: 10%;
+  margin: 0 auto 2em;
+}
+
+.vertical-line{
+  position: absolute;
+  width:1px;
+  height: 85%;
+  left: 50%;
+  background: #1c6792;
+}
+
+.dots{
+  border-radius: 50%;
+  background:#1c6792;
+  width: 8px;
+  height: 8px;
+  margin: 4em 0em;
+}
+
+
+.timeline-container .col:nth-child(odd) .timeline-event{
+  text-align: right;
+  margin-right: 1em;
+}
+.timeline-container .col:nth-child(even) .timeline-event{
+  margin-top: 3em;
+  text-align: left;
+  margin-left: 1em;
+}
+
+/* My Projects */
+
+section, footer{
+  position: relative;
+  padding: 2em 0 4em;
+}
+
+.carousel {
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: auto;
+  transition: all 0.1s ease-out;
+  opacity: 0.7;
+}
+.carousel::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: black;
+}
+.carousel-item img:hover{
+  opacity: 1;
+  transform: scale(1.02);
+}
+.carousel-caption{
+  color: white;
+}
+
+.contact-hr{
+  margin: 0 0 2em 0;
+}
+
+.social-medias-hr{
+  width: 100%;
+  margin: 6em 0 1.4em auto;
+}
+
+.btn-primary{
+  background:#339fcd;
+}
+
+.contact-icons-container{
+  text-align: right;
+  margin: auto 0;
+}
+
+.social-medias-icons{
+  text-align: center;
+}
+
+footer{
+  color: white;
+}
+
+/* Smaller Screen */
+@media screen and (max-width: 770px) {
+body{
+  font-size: 12px;
+}
+.contact-me .title{
+  text-align: center;
+}
+.contact-hr{
+  margin: 0 auto 2em auto;
+}
+
+.contact-me-container{
+  text-align: left;
+  padding-bottom: 4em;
+}
+.social-medias-container{
+  text-align: center;
+}
+.social-medias-hr{
+  width: 100%;
+  margin: 2em 0 2em 0;
+}
+
+.contact-icons-container{
+  text-align: right;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+}
+
+/* Smallest Screen */
+@media screen and (max-width: 575px) {
+.contact-icons-container, .contact-me-container{
+  text-align: center;
+}
+}
